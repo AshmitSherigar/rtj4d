@@ -10,79 +10,60 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <div class="page1">
-      <nav>
-        <div class="nav-link">
-          <h1>Art</h1>
-          <h1>About</h1>
-          <h1>Shop</h1>
-          <h1>Visit</h1>
-          <h1>Search</h1>
+    <div class="page1 h-full w-full">
+    
+        <div class="nav-link relative text-white flex items-center justify-center gap-[9vw] text-5xl">
+          <h1 class="absolute top-40 left-25">Art</h1>
+          <h1 class="absolute top-60 right-50">Origin</h1>
+          <h1 class="absolute top-100 left-70">Fate</h1>
+          <h1 class="absolute top-160 right-20">Earth</h1>
+          <h1>Eternity</h1>
         </div>
-      </nav>
-      <canvas id="canvas"></canvas>
-      <div class="hero-text">
-        <h1>Atlas</h1>
-        <h2>The Titan Who Carried the Heavens</h2>
+    
+      <canvas id="canvas1" class="absolute top-0 left-0 pointer-events-none z-0"></canvas>
+      <div class="hero-text font-[Viaoda_Libre] font-thin -translate-x-1/2 -translate-y-1/2 top-[60%] left-[50%] absolute mix-blend-difference selection:bg-[#ffffffe2] selection:text-black selection:text-shadow-[2px_2px_10px_black]">
+        <h1 class="tracking-[20px] text-[100px] text-center text-shadow-[2px_2px_10px_white]">Atlas</h1>
+        <h2 class="mt-[30px] tracking-[16px] text-[20px] text-center text-shadow-[5px_5px_14px_white]">The Titan Who Carried the Heavens</h2>
       </div>
     </div>
-    <div class="page2">
-      <p id="para1">
+    <div class="page2 selection:bg-[#ffffffe2] selection:text-black selection:text-shadow-[2px_2px_10px_black] absolute top-full left-0 bg-transparent h-screen w-full -z-1">
+      <p class="absolute text-justify top-0 left-20 w-1/2 mt-[30px] font-[Viaoda_Libre] tracking-[5px] text-[20px] font-thin text-center text-shadow-[5px_5px_14px_white]">
         In Greek mythology, Atlas was condemned to hold up the sky for eternity.
         His story symbolizes endurance, strength, and the weight of
         responsibility. Despite his punishment, he remains a powerful figure in
         history and art, inspiring countless works and interpretations.
       </p>
-      <h1>The Burden of Atlas</h1>
-      <p id="para2">
+      <h1 class="font-[Viaoda_Libre] tracking-[20px] text-[100px] font-thin text-center text-shadow-[2px_2px_10px_white] absolute top-[55%] left-[20%] z-[2]">The Burden of Atlas</h1>
+      <p class="absolute top-60 right-20 text-justify z-2 w-1/2 mt-[30px] font-[Viaoda_Libre] tracking-[5px] text-[20px] font-thin text-center text-shadow-[5px_5px_14px_white]">
         The image of Atlas carrying the heavens has been reimagined in various
         cultures, often representing the struggle of those who bear immense
         challenges. His tale serves as a reminder of perseverance and the
         unyielding spirit of those who carry the weight of the world.
       </p>
-      <canvas id="canvas2"></canvas>
+      <canvas id="canvas2" class="absolute h-full w-full pointer-events-none z-0"></canvas>
     </div>
-    <div class="page3">
-      <h1>The Eternal Punishment</h1>
-      <p>
+    <div class="page3 selection:bg-[#ffffffe2] selection:text-black selection:text-shadow-[2px_2px_10px_black] absolute top-[200%] left-0 h-[100vh] w-[100%] -z-1">
+      <h1 class="bg-white font-[Viaoda_Libre] tracking-[22px] text-[100px] font-thin text-center text-shadow-[2px_2px_10px_white] text-black absolute left-[11%] top-[45%] rounded-[1px] mix-blend-difference p-[14px]">The Eternal Punishment</h1>
+      <p class="bg-white font-[Viaoda_Libre] text-[30px] font-thin text-center text-shadow-[2px_2px_10px_white] text-black absolute right-[20%] -rotate-20 top-[75%] rounded-[1px] mix-blend-difference p-[14px]">Rotate This Statue</p>
+      <p class="-z-1 mt-[30px] text-justify font-[Viaoda_Libre] tracking-[8px] text-[20px] font-thin text-left text-shadow-[5px_5px_14px_white] w-[45%] absolute left-[2%] top-[10%] mix-blend-multiply">
         Bound by Zeus decree, Atlas stood at the edge of the world, shouldering
         the celestial sphere for eternity. His suffering became a symbol of
         endurance and resilience, echoing through the ages.
       </p>
-      <h4>“He who carries the heavens carries the weight of fate.”</h4>
+      <h4 class="mt-[30px] font-[Viaoda_Libre] tracking-[3px] text-[20px] font-thin text-center text-shadow-[5px_5px_14px_white] absolute right-[2%] top-[1%]">“He who carries the heavens carries the weight of fate.”</h4>
       <canvas id="canvas3"></canvas>
     </div>
-    <div class="page4">
-      <div class="content">
-
-
-        <div class="marquee-container">
-          <div class="marquee"><h1>ATLAS: The Titan Who Holds the Heavens. </h1></div>
+    <div class="page4 absolute top-[300vh] left-0 h-screen w-full bg-transparent selection:bg-[ffffffe2] selection:text-black">
+      <div class="w-full h-[45vh] flex items-center justify-center">
+        <div class="marquee-container w-full mt-[80px] overflow-hidden relative whitespace-nowrap">
+          <div class="marquee inline-block font-normal relative text-[8rem]"><h1 class="font-[Viaoda_Libre]">ATLAS: The Titan Who Holds the Heavens.</h1></div>
         </div>
-
-
       </div>
-      <footer>
-        <div class="about">
-          <div class="about-text">
-            <h4>Lorem, ipsum dolor.</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
-              sequi repellendus, architecto consectetur dolore soluta.
-            </p>
-          </div>
-          <div class="socials">
-            <span class="material-symbols-outlined">
-              nest_heat_link_gen_3
-            </span>
-            <span class="material-symbols-outlined"> laptop_mac </span>
-            <span class="material-symbols-outlined"> low_density </span>
-            <span class="material-symbols-outlined"> assured_workload </span>
-          </div>
-        </div>
-        <div class="contact">
+      <footer class="h-[56vh] w-full flex justify-center relative border-t border-white overflow-hidden">
+        <div class="relative flex flex-col-reverse">
           <svg
             width="332"
             height="79"
@@ -95,10 +76,7 @@
               fill="white"
             />
           </svg>
-          <p>© 2024 Atlas. All rights reserved.</p>
-        </div>
-        <div class="misc">
-          <div class="banner"></div>
+          <p class="font-[Winky_Sans] text-xl">© <span id="year"></span> Atlas. All rights reserved.</p>
         </div>
       </footer>
     </div>

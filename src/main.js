@@ -9,7 +9,9 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener("DOMContentLoaded", () => {
-  const canvasIds = ["canvas", "canvas2", "canvas3"];
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  const canvasIds = ["canvas1", "canvas2", "canvas3"];
   const scenes = [];
 
   const rendererParams = {
@@ -33,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
       model.position.set(0, -1, 0);
       scene.add(model);
 
-      // GSAP animations
+
       if (index === 0) {
         model.position.set(0, -1, 0);
         gsap.to(model.position, {
@@ -79,7 +81,6 @@ document.addEventListener("DOMContentLoaded", () => {
           scene.environment = texture;
         });
 
-        // Spin animation
         animate(() => {
           model.rotation.y += 0.005;
         });
@@ -96,8 +97,6 @@ document.addEventListener("DOMContentLoaded", () => {
     setupMouseLighting(scenes);
     setupResize(scenes);
   });
-
-  // ===================== Utilities =====================
 
   function createScene(canvasId, lightPower = 2) {
     const scene = new THREE.Scene();
@@ -169,7 +168,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ================= Marquee Letters Animation =================
   const h1 = document.querySelector(".marquee-container h1");
   const letters = h1.innerText.split("");
   h1.innerHTML = "";
