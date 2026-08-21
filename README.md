@@ -53,6 +53,8 @@ Each section (`.page1`, `.page2`, `.page3`, `.page4`) introduces a new 3D scene 
 
 ---
 
+### NOTE: This website is not responsive as of August 2026
+
 ## Setup Instructions
 
 ### 1. Clone or Download the Repository

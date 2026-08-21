@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Charm:wght@400;700&family=Cherish&family=Jaini&family=Metal+Mania&family=Oswald:wght@200..700&family=Rock+Salt&family=Smythe&family=Viaoda+Libre&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
 
-
 * {
   margin: 0;
   padding: 0;
@@ -47,7 +46,10 @@ nav {
   padding-top: 3px;
   cursor: pointer;
   z-index: 2;
-  transition: transform 0.4s ease, opacity 0.5s ease, filter 0.5s ease;
+  transition:
+    transform 0.4s ease,
+    opacity 0.5s ease,
+    filter 0.5s ease;
   font-family: "Smythe";
 }
 
@@ -64,15 +66,16 @@ nav {
   color: #000000;
 }
 
-
 .nav-link h1::before {
   content: "";
   position: absolute;
   inset: 0; /* Makes it cover the whole h1 */
   background: #ffe046f4;
-  transition: transform 0.5s ease, background 0.4s ease;
+  transition:
+    transform 0.5s ease,
+    background 0.4s ease;
   transform: scaleX(0);
-  transform-origin: center; 
+  transform-origin: center;
   z-index: -1;
   box-shadow: 7px 7px 100px white;
 }
@@ -91,7 +94,7 @@ svg path {
   fill: transparent;
   stroke: white;
   stroke-width: 1;
-  stroke-dasharray:379;
+  stroke-dasharray: 379;
   stroke-dashoffset: 379;
   animation: textAnimation 5s ease-in-out alternate infinite;
 }
@@ -108,25 +111,24 @@ svg path {
   }
 }
 
-.marquee-container h1 span{
+.marquee-container h1 span {
   display: inline-block;
   gap: 20px;
 }
 
-.marquee-container h1 span:hover{
+.marquee-container h1 span:hover {
   transform: scaleY(0.9);
   cursor: pointer;
 }
 .marquee {
   animation: marquee 20s linear infinite;
-
 }
 
 @keyframes marquee {
   0% {
-      transform: translateX(100%);
+    transform: translateX(100%);
   }
   100% {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
