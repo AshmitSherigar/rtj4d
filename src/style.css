@@ -11,7 +11,7 @@ html {
 }
 body {
   font-family: sans-serif;
-  background-color: #050505;
+  background-color: #080808;
   color: white;
   overflow-x: hidden;
 }
@@ -61,20 +61,20 @@ nav {
   transform: scale(1.2);
   opacity: 1;
   filter: blur(0);
-  color: #efefef;
+  color: #000000;
 }
 
-/* Background effect on hover */
+
 .nav-link h1::before {
   content: "";
   position: absolute;
   inset: 0; /* Makes it cover the whole h1 */
-  background: #ffe14cda;
+  background: #ffe046f4;
   transition: transform 0.5s ease, background 0.4s ease;
   transform: scaleX(0);
-  transform-origin: center;
+  transform-origin: center; 
   z-index: -1;
-  box-shadow: 5px 5px 70px white;
+  box-shadow: 7px 7px 100px white;
 }
 
 .nav-link h1:hover::before {
@@ -114,16 +114,17 @@ svg path {
 }
 
 .marquee-container h1 span:hover{
-  transform: scaleY(1.2);
+  transform: scaleY(0.9);
+  cursor: pointer;
 }
 .marquee {
-  animation: marquee 25s linear infinite;
+  animation: marquee 20s linear infinite;
 
 }
 
 @keyframes marquee {
   0% {
-      transform: translateX(200%);
+      transform: translateX(100%);
   }
   100% {
       transform: translateX(-100%);
