@@ -93,7 +93,7 @@ svg path {
   stroke-width: 1;
   stroke-dasharray:379;
   stroke-dashoffset: 379;
-  animation: textAnimation 4s ease-in-out forwards infinite;
+  animation: textAnimation 5s ease-in-out alternate infinite;
 }
 @keyframes textAnimation {
   0% {
